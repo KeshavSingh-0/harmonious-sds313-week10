@@ -1,10 +1,11 @@
 ---
-title: "Team [TEAM NAME] — Intro"
+title: "Team Harmonious — Intro"
 format: html
 ---
 
 ## Team Members
 
+Imelda Monreal
 <!-- Everyone: add your name below, one per line. You will likely collide with a teammate
      editing this same list at the same time — that's expected, and it's your first real
      merge conflict. Resolve it together rather than one person overwriting the other. -->
