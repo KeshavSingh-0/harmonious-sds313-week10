@@ -4,6 +4,7 @@ format: html
 ---
 
 ## Team Members
+<!-- Aaron --!>
 <!-- Imelda Monreal --!>
 <!-- Sarah --!>
 <!-- DHRUPAD KRISHNA --!>
