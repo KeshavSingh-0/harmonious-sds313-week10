@@ -5,17 +5,21 @@ format: html
 
 ## Team Members
 
+```{=html}
 <!-- Everyone: add your name below, one per line. You will likely collide with a teammate
      editing this same list at the same time — that's expected, and it's your first real
      merge conflict. Resolve it together rather than one person overwriting the other. -->
+```
 
--
+- Keshav Singh
 
 ## Team Visualizations
 
+```{=html}
 <!-- Each teammate: agree as a team on who's making which plot before anyone starts, so
      no two people create the same visualization. Then add your own section below with
      your name and your one plot. -->
+```
 
 ```{r}
 #| label: setup
@@ -24,9 +28,17 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-### [Your Name] — [Your Visualization, e.g. "Body Mass by Species"]
+### Keshav Singh — Distribution of Flipper Length
 
 ```{r}
 # Make your agreed-upon plot here, e.g.:
 # penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+ggplot(data = penguins, aes(x = flipper_length_mm, fill = species)) +
+  geom_histogram(position = "identity", alpha = 0.5, bins = 30) +
+  scale_fill_manual(values = c("darkorange", "purple", "cyan4")) +
+  labs(title = "Distribution of Flipper Lengths",
+       x = "Flipper Length (mm)",
+       y = "Count",
+       fill = "Species") +
+  theme_minimal()
 ```
